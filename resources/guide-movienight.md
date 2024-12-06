@@ -30,4 +30,8 @@ The current branch will have an asterisk * next to its name:
 ```sh
 * part-2
   main
-  
+
+
+
+git add .
+
