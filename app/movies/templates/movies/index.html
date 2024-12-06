@@ -6,7 +6,7 @@
             <p class="mb-3">Schedule a Movie Night with your friends.</p>
             {% if request.user.is_anonymous %}
             <p>
-                Please <a href="{% url 'login' %}">Log In</a> or <a href="/accounts/register/">Sign Up</a>.
+                Please <a href="{% url 'login' %}">Log In</a> or <a href="{% url 'django_registration_register' %}">Sign Up</a>.
             </p>
             {% else %}
             <p>

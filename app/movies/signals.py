@@ -1,12 +1,8 @@
-from movies.models import MovieNightInvitation
-from movies.tasks import send_invitation, send_attendance_change
-
 from django.db.models.signals import pre_save, post_save
 from django.dispatch import receiver
 
 from movies.models import MovieNightInvitation
 from movies.tasks import send_invitation, send_attendance_change
-
 
 USE_CELERY = False
 

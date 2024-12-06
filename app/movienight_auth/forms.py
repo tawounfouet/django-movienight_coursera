@@ -1,7 +1,9 @@
-from django_registration.forms import RegistrationForm as DefaultRegistrationForm
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Submit
+from django_registration.forms import RegistrationForm as DefaultRegistrationForm
+
 from .models import User
+
 
 class RegistrationForm(DefaultRegistrationForm):
     class Meta(DefaultRegistrationForm.Meta):

@@ -28,12 +28,8 @@
                            href="{% url 'login' %}">Log In</a>
                     </li>
                      <li class="nav-item">
-                        {% comment %}
-                        This is the preffered way to link but will only work once the registration URLs have ben
-                        set up in Question 3.
-                        <a class="nav-link" href="{% url 'django_registration_register' %}">Sign Up</a>
-                        {% endcomment %}
-                        <a class="nav-link" href="/accounts/register/">Sign Up</a>
+                        <a class="nav-link"
+                           href="{% url 'django_registration_register' %}">Sign Up</a>
                     </li>
                 {% else %}
                     <li class="nav-item">

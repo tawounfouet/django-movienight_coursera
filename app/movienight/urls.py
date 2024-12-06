@@ -40,4 +40,5 @@ urlpatterns = [
     ),
     path("search/", movies.views.movie_search, name="movie_search_ui"),
     path("movies/<slug:imdb_id>/", movies.views.movie_detail, name="movie_detail_ui"),
+    path("api/v1/", include("movienight.api_urls")),
 ]
