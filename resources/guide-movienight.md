@@ -38,3 +38,10 @@ git commit -m "Start Capstone Part 2: Added DRF views and serializers"
 
 git push -u origin part-2
 
+
+celery -A movienight worker -l DEBUG
+
+celery -A movienight beat -l INFO --scheduler django_celery_beat.schedulers:DatabaseScheduler
+
+
+celery -A movienight worker -l DEBUG
