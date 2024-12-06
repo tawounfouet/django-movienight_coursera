@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django_registration.backends.activation.views import RegistrationView
+from django_registration.backends.activation.views import ActivationView
+
 
 import movienight_auth.views
 import movies.views
@@ -29,6 +31,7 @@ urlpatterns = [
         RegistrationView.as_view(form_class=RegistrationForm),
         name="django_registration_register",
     ),
+    path('accounts/activate/<activation_key>/', ActivationView.as_view(), name='django_registration_activate',),
     path("accounts/", include("django_registration.backends.activation.urls")),
     path("accounts/", include("django.contrib.auth.urls")),
     path("", movies.views.index),
