@@ -139,7 +139,7 @@ EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 BASE_URL = ""
 
-OMDB_KEY = ""
+OMDB_KEY = "81d0a701"
 
 
 # existing code omitted
