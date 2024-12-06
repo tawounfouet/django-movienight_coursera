@@ -34,4 +34,7 @@ The current branch will have an asterisk * next to its name:
 
 
 git add .
+git commit -m "Start Capstone Part 2: Added DRF views and serializers"
+
+git push -u origin part-2
 
